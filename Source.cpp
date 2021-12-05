@@ -32,3 +32,7 @@ class invalidCharacterException
 { };
 class invalidRangeException
 {};
+
+// Function Prototypes
+bool isNumeric(string);          // used to determin if an offset is numeric (inlcudes + or - check for first character)
+char character(char, int);      // prototype to determine offset character from starting character
