@@ -100,3 +100,16 @@ int main()
             cout << "\nPlease try entering all values again";
         }
 
+        cout << "\n";
+        cout << "\nDo another character offset ( enter Y or y) ";
+        cin >> doAnother;
+        cin.ignore();
+
+        number = false;
+
+    } while (doAnother == "Y" || doAnother == "y");              ///   end of do loop
+
+
+    system("pause");
+    return 0;
+}
