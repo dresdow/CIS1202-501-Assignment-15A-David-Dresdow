@@ -26,3 +26,9 @@
 #include <cstdlib>
 
 using namespace std;
+
+// Dummy classes used for multiple catch statements
+class invalidCharacterException
+{ };
+class invalidRangeException
+{};
