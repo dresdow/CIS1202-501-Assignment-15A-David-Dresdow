@@ -23,13 +23,13 @@ char character(char start, int offset);
 
 9. Sample Output
 
-character('a', 1) should return 'b'.
+     character('a', 1) should return 'b'.
 
-character('a', -1) should throw an invalidRangeExpection.
+     character('a', -1) should throw an invalidRangeExpection.
 
-character('Z', -1) should return 'Y'.
+     character('Z', -1) should return 'Y'.
 
-character('?', 5) should throw an invalidCharacterExcpeption.
+     character('?', 5) should throw an invalidCharacterExcpeption.
 
 Do not allow upper- and lower-case transitions.  character('A', 32) should throw an exception, not return 'a'.
 
