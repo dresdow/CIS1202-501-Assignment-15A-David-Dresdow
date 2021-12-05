@@ -131,3 +131,28 @@ bool isNumeric(string str)
     }
     return true;
 }
+
+/************************************************************************************************************************************************/
+/*  Function to find new offset and to throw exception errors                                                                                   */
+/************************************************************************************************************************************************/
+
+char character(char start, int startOffset)
+{
+    bool keepGoing = false;
+    char answer;
+
+    if ((start >= 65 && start <= 90) || (start >= 97 && start <= 122)) answer = start + startOffset;
+    else throw invalidCharacterException;
+
+
+    if (islower(start))
+    {
+        if (answer < 97 || answer > 122)  throw invalidRangeException;
+    }
+    else if (isupper(start))
+    {
+        if (answer < 65 || answer > 90) throw invalidRangeException;
+    }
+
+    return answer;
+}
