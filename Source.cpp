@@ -36,3 +36,13 @@ class invalidRangeException
 // Function Prototypes
 bool isNumeric(string);          // used to determin if an offset is numeric (inlcudes + or - check for first character)
 char character(char, int);      // prototype to determine offset character from starting character
+
+int main()
+{
+    char inputChar;
+    char offsetChar;
+    int offset = 0;
+    string input;
+    bool number = false;
+    string doAnother;
+
