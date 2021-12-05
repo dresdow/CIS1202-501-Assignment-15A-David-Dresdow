@@ -77,3 +77,26 @@ int main()
 
         }   // end of while loop
 
+
+        try
+        {
+            offsetChar = character(inputChar, offset);                    // call to function to use offset to find new character
+            cout << "\nAnswer is " << offsetChar;
+        }
+
+        catch (invalidCharacterException)
+        {
+            cout << "\nINVALID CHARACTER ENTERED";
+            cout << "\nCharacter must be either a lower or upper case alphabetic character";
+            cout << "\nPlease try entering all values again";
+        }
+
+
+        catch (invalidRangeException)
+        {
+            cout << "\nOUT OF RANGE ERROR";
+            cout << "\nIf character entered is a lower case letter, the character plus offset must still be a lower case letter";
+            cout << "\nIf character entered is an upper case letter, the character plus offset must still be an upper case letter";
+            cout << "\nPlease try entering all values again";
+        }
+
