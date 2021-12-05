@@ -14,12 +14,22 @@ char character(char start, int offset);
 6.	Functions must pass parameters and return values as needed, using only local variables.  Global variables are not allowed.
 7.	Use comments to document your program as you see fit.  Include comments at the beginning of your program with your name, the class (with section), and the date.
 // Josh Junior
+
 // CIS 1202 101
+
 // January 31, 2021
+
 8.	Submit the URL for your repository to the dropbox.  No screen shots are needed.
+9.	
 Sample Output
+
 character('a', 1) should return 'b'.
+
 character('a', -1) should throw an invalidRangeExpection.
+
 character('Z', -1) should return 'Y'.
+
 character('?', 5) should throw an invalidCharacterExcpeption.
+
 Do not allow upper- and lower-case transitions.  character('A', 32) should throw an exception, not return 'a'.
+
