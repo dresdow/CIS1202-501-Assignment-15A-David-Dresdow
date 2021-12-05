@@ -46,3 +46,34 @@ int main()
     bool number = false;
     string doAnother;
 
+    do                                       // allow users to enter characters and offsets
+    {
+        //    Enter a character
+        cout << "\n";
+        cout << "\nEnter a character from A to Z or a to z:  ";
+        cin >> inputChar;
+        cin.ignore();
+
+        //  Enter an offset number
+
+        cout << "\nEnter an offset number:  ";
+        getline(cin, input);
+
+
+        // loop until user enters a number
+        while (number == false)
+        {
+
+            number = isNumeric(input);                       // call to function to see if it is numeric
+
+            if (number == true)  offset = stoi(input);
+            else
+            {
+                cout << "\nYou did not enter a number, please enter again";
+                cout << "\n";
+                cout << "\nEnter an offset number:  ";
+                getline(cin, input);
+            }
+
+        }   // end of while loop
+
